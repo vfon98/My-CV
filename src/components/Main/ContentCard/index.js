@@ -1,14 +1,15 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
+import About from './About/About'
+import Education from './Education/Education';
+import MySkills from './MySkills/MySkills';
 
 function ContentCard() {
   return (
-    <Card.Group>
-      <Card fluid>
-        <Card.Content header='Conten Card' />
-        <Card.Content extra>This is Content Card</Card.Content>
-      </Card>
-    </Card.Group>
+    <>
+      <About />
+      <Education />
+      <MySkills />
+    </>
   );
 }
 

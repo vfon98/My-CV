@@ -1,5 +1,12 @@
 import React from 'react';
-import { Image, Label, Header, Segment, Divider } from 'semantic-ui-react';
+import {
+  Image,
+  Label,
+  Header,
+  Segment,
+  Divider,
+  Button,
+} from 'semantic-ui-react';
 import MyAvatar from '../../../assets/images/my-avatar.svg';
 import InfoList from './InfoList';
 
@@ -14,6 +21,9 @@ function InfoCard() {
         <Divider horizontal>Web developer</Divider>
         <InfoList />
       </Segment>
+      <Button color='violet' circular fluid inverted>
+        Download my CV
+      </Button>
     </Segment>
   );
 }
