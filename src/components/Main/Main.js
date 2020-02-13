@@ -5,7 +5,7 @@ import ContentCard from './ContentCard';
 
 function Main() {
   return (
-    <Grid container style={{paddingTop: '2rem'}}>
+    <Grid container style={{paddingTop: '2rem', marginBottom: '20rem'}}>
       <Grid.Row>
         <Grid.Column width={4}>
           <InfoCard />
