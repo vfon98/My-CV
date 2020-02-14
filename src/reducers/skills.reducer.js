@@ -61,13 +61,13 @@ const initialState = {
     {
       id: 3,
       header: 'MongoDB',
-      percent: '55',
+      percent: '65',
       color: 'blue',
     },
     {
       id: 4,
       header: 'Object Oriented Programming',
-      percent: '65',
+      percent: '60',
       color: 'green',
     },
     {

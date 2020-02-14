@@ -1,0 +1,31 @@
+.awssld {
+  // --slider-height-percentage: 60%;
+  // --slider-transition-duration: 770ms;
+  --organic-arrow-thickness: 6px;
+  --organic-arrow-border-radius: 10px;
+  --organic-arrow-height: 30px;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --slider-transition-duration: 400ms;
+  --control-bullet-color: #2d5182;
+  --control-bullet-active-color: #26456f;
+  --content-background-color: #fff;
+
+  margin-bottom: 2rem;
+  border: 1px solid darkgrey;
+  padding: 0.5rem;
+
+  &__bullets {
+    bottom: -30px;
+    button {
+      height: 12px;
+      width: 12px;
+    }
+  }
+
+  &__content {
+    // display: block;
+    // justify-content: flex-start;
+  }
+}

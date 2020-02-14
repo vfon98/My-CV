@@ -12,8 +12,8 @@ import InfoList from './InfoList';
 
 function InfoCard() {
   return (
-    <Segment raised>
-      <Label ribbon as='a' color='red' size='big'>
+    <Segment raised color='red' style={{ position: 'sticky', top: '1rem' }}>
+      <Label ribbon color='red' size='big'>
         <Header as='h3'>To Vu Phong</Header>
       </Label>
       <Segment>

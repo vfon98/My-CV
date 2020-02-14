@@ -25,7 +25,7 @@ function Education() {
           <List bulleted relaxed>
             <List.Item><b>Degree: </b>Bachelor</List.Item>
             <List.Item><b>Major: </b>Software Engineering</List.Item>
-            <List.Item><b>GPA: </b>3.16/4.00</List.Item>
+            <List.Item><b>GPA: </b>3.16 / 4.00</List.Item>
             <List.Item><b>Degree grade: </b>Good</List.Item>
           </List>
         </Card.Content>
