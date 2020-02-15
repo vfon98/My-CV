@@ -1,29 +1,30 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Segment, Header, Icon } from 'semantic-ui-react';
+import { connect } from 'react-redux'
 import AwesomeSlider from 'react-awesome-slider';
-import OneProject from './OneProject';
 import CoreStyles from 'react-awesome-slider/src/styles';
 import AnimationStyles from 'react-awesome-slider/src/styled/cube-animation';
-import slideCustom from './slide.custom.scss';
+import SlideCustom from './slide.custom.scss';
+import OneProject from './OneProject';
 
-function SelfProjects({ self_projects }) {
-  console.log(self_projects);
+function AcademicProjects({ academic_projects }) {
   return (
     <Segment>
       <Header>
-        <Icon name='laptop' />
+        <Icon name='university' />
         <Header.Content>
-          Self projects
-          <Header.Subheader>For learning purpose</Header.Subheader>
+          Academic projects
+          <Header.Subheader>
+            Projects that make based on the requirement of subject
+          </Header.Subheader>
         </Header.Content>
       </Header>
 
       <AwesomeSlider
         animation='cubeAnimation'
-        cssModule={[CoreStyles, AnimationStyles, slideCustom]}
+        cssModule={[CoreStyles, AnimationStyles, SlideCustom]}
       >
-        {self_projects.map(project => (
+        {academic_projects.map(project => (
           <div key={project.id}>
             <OneProject {...project} />
           </div>
@@ -34,7 +35,7 @@ function SelfProjects({ self_projects }) {
 }
 
 const mapStateToProps = state => ({
-  self_projects: state.projects.self_projects,
+  academic_projects: state.projects.academic_projects,
 });
 
-export default connect(mapStateToProps)(SelfProjects);
+export default connect(mapStateToProps)(AcademicProjects);

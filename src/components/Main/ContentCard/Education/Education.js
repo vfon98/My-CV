@@ -1,13 +1,12 @@
 import React from 'react';
-import { Segment, Label, Card, Image, List } from 'semantic-ui-react';
+import { Segment, Card, Image, List } from 'semantic-ui-react';
 import ctuLogo from '../../../../assets/images/ctu-logo.png';
+import Ribbon from '../../../SharedUI/Ribbon';
 
 function Education() {
   return (
     <Segment raised color='blue'>
-      <Label color='blue' size='large' ribbon>
-        Education
-      </Label>
+      <Ribbon color='blue'>Education</Ribbon>
       <Card fluid>
         <Card.Content>
           <Image

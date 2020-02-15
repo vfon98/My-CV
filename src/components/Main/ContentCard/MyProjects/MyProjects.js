@@ -1,17 +1,16 @@
 import React from 'react';
-import { Segment, Label, Header, Button, Image, Icon } from 'semantic-ui-react';
+import { Segment } from 'semantic-ui-react';
 import SelfProjects from './SelfProjects';
+import AcademicProjects from './AcademicProjects';
+import Ribbon from '../../../SharedUI/Ribbon';
 
 function MyProjects() {
   return (
     <Segment color='green'>
-      <Label ribbon color='green'>
-        My projects
-      </Label>
+      <Ribbon color='green'>My projects</Ribbon>
 
       <SelfProjects />
-
-      <Segment></Segment>
+      <AcademicProjects />
     </Segment>
   );
 }

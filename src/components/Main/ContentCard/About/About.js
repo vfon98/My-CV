@@ -1,12 +1,11 @@
 import React from 'react';
-import { Segment, Label, Container } from 'semantic-ui-react';
+import { Segment, Container } from 'semantic-ui-react';
+import Ribbon from '../../../SharedUI/Ribbon';
 
 function About() {
   return (
     <Segment raised color='purple'>
-      <Label ribbon size='large' color='purple'>
-        About me
-      </Label>
+      <Ribbon color='purple'>About me</Ribbon>
       <Container>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt

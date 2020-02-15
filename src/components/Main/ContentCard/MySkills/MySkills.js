@@ -1,15 +1,14 @@
 import React from 'react';
-import { Segment, Label, Container, Grid, Divider, List, Header } from 'semantic-ui-react';
+import { Segment, Container, Grid } from 'semantic-ui-react';
 import MainSkills from './MainSkills';
 import OtherSkills from './OtherSkills';
 import AdditionalSkills from './AdditionalSkills';
+import Ribbon from '../../../SharedUI/Ribbon';
 
 function MySkills() {
   return (
     <Segment color='orange'>
-      <Label ribbon size='large' color='orange'>
-        My skills
-      </Label>
+      <Ribbon color='orange'>My skills</Ribbon>
       <Container>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt

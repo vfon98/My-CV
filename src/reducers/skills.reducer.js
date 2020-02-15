@@ -80,7 +80,7 @@ const initialState = {
   additional: {
     database: {
       header: 'DATABASE',
-      items: ['MongoDB', 'MySQL', 'Microsoft SQL Server', 'Oracle'],
+      items: ['MongoDB', 'MySQL', 'Microsoft SQL Server'],
     },
     editors: {
       header: 'IDE / EDITOR',

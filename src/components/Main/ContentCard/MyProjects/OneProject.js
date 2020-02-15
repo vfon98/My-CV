@@ -1,11 +1,13 @@
 import React from 'react';
-import { Grid, Image, Card, Item, List, Header } from 'semantic-ui-react';
+import { Grid, Image, Card, Item, List, Header, Icon } from 'semantic-ui-react';
+import screenshot from '../../../../assets/images/memory-game-screenshot.png';
 
 function OneProject({ image, name, description, techniques, repo, demo }) {
   return (
     <Grid columns={2}>
       <Grid.Column width={8}>
-        <Image src='https://placehold.it/400' />
+        <Image src={image || 'https://placehold.it/400' } />
+        {/* <Image src={screenshot} /> */}
       </Grid.Column>
       <Grid.Column width={8}>
         <Header data-aos='fade-up'>{name}</Header>
@@ -20,7 +22,9 @@ function OneProject({ image, name, description, techniques, repo, demo }) {
           </List.Item>
           <List.Item>
             <List.Header>Git repository</List.Header>
-            <List.Content as='a'>{repo}</List.Content>
+            <List.Content as='a' href={repo}>
+              Take me there <Icon name='share square' />
+            </List.Content>
           </List.Item>
           <List.Item>
             <List.Header>Demo</List.Header>

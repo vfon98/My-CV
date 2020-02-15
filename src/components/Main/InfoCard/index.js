@@ -1,21 +1,15 @@
 import React from 'react';
-import {
-  Image,
-  Label,
-  Header,
-  Segment,
-  Divider,
-  Button,
-} from 'semantic-ui-react';
+import { Image, Segment, Divider, Button } from 'semantic-ui-react';
 import MyAvatar from '../../../assets/images/my-avatar.svg';
 import InfoList from './InfoList';
+import Ribbon from '../../SharedUI/Ribbon';
 
 function InfoCard() {
   return (
     <Segment raised color='red' style={{ position: 'sticky', top: '1rem' }}>
-      <Label ribbon color='red' size='big'>
-        <Header as='h3'>To Vu Phong</Header>
-      </Label>
+      <Ribbon color='red' size='huge'>
+        To Vu Phong
+      </Ribbon>
       <Segment>
         <Image src={MyAvatar} size='small' centered />
         <Divider horizontal>Web developer</Divider>
