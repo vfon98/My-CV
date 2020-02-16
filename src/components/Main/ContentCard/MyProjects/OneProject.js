@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Image, Card, Item, List, Header, Icon } from 'semantic-ui-react';
-import screenshot from '../../../../assets/images/memory-game-screenshot.png';
+import { Grid, Image, List, Header, Icon } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
 
 function OneProject({ image, name, description, techniques, repo, demo }) {
   return (
@@ -34,6 +34,15 @@ function OneProject({ image, name, description, techniques, repo, demo }) {
       </Grid.Column>
     </Grid>
   );
+}
+
+OneProject.propTypes = {
+  image: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  techniques: PropTypes.string.isRequired,
+  repo: PropTypes.string,
+  demo: PropTypes.string
 }
 
 export default OneProject;

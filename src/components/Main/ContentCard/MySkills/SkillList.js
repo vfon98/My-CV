@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Grid, Header, List } from 'semantic-ui-react';
 
 function SkillList({ header, items }) {
@@ -12,6 +13,11 @@ function SkillList({ header, items }) {
       </List>
     </Grid.Column>
   );
+}
+
+SkillList.propTypes = {
+  header: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired
 }
 
 export default SkillList;

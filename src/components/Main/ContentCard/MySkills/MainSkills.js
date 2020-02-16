@@ -1,9 +1,10 @@
 import React from 'react';
-import { Header, Icon, Progress, Segment, Item, Divider } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
+import { Header, Icon, Segment, Divider, Item } from 'semantic-ui-react';
 import SkillBar from './SkillBar';
 import { connect } from 'react-redux';
 
-function WebSkills({ skills }) {
+function MainSkills({ main_skills }) {
   return (
     <Segment>
       <Header>
@@ -14,15 +15,21 @@ function WebSkills({ skills }) {
         </Header.Content>
       </Header>
       <Divider />
-      {skills.main.map(skill => {
-        return <SkillBar key={skill.id} {...skill} />;
-      })}
+      <Item.Group>
+        {main_skills.map(skill => {
+          return <SkillBar key={skill.id} {...skill} />;
+        })}
+      </Item.Group>
     </Segment>
   );
 }
 
+MainSkills.propTypes = {
+  main_skills: PropTypes.array.isRequired,
+};
+
 const mapStateToProps = state => ({
-  skills: state.skills,
+  main_skills: state.skills.main,
 });
 
-export default connect(mapStateToProps)(WebSkills);
+export default connect(mapStateToProps)(MainSkills);

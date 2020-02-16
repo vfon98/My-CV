@@ -14,13 +14,15 @@ function MySkills() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           sequi quos eius delectus repellat, alias cum corporis repellendus
         </p>
-        <Grid>
-          <Grid.Column width={8}>
-            <MainSkills />
-          </Grid.Column>
-          <Grid.Column width={8}>
-            <OtherSkills />
-          </Grid.Column>
+        <Grid columns='equal'>
+          <Grid.Row stretched>
+            <Grid.Column>
+              <MainSkills />
+            </Grid.Column>
+            <Grid.Column>
+              <OtherSkills />
+            </Grid.Column>
+          </Grid.Row>
         </Grid>
       </Container>
       <AdditionalSkills />

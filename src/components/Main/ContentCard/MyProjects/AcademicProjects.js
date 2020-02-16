@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Segment, Header, Icon } from 'semantic-ui-react';
 import { connect } from 'react-redux'
 import AwesomeSlider from 'react-awesome-slider';
@@ -32,6 +33,10 @@ function AcademicProjects({ academic_projects }) {
       </AwesomeSlider>
     </Segment>
   );
+}
+
+AcademicProjects.propTypes = {
+  academic_projects: PropTypes.array.isRequired
 }
 
 const mapStateToProps = state => ({

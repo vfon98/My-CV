@@ -1,5 +1,6 @@
 import React from 'react';
-import { Segment, Grid, Header, List } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
+import { Segment, Grid } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import SkillList from './SkillList';
 
@@ -17,6 +18,10 @@ function AdditionalSkills({ skills }) {
       </Grid>
     </Segment>
   );
+}
+
+AdditionalSkills.propTypes = {
+  skills: PropTypes.object.isRequired
 }
 
 const mapStateToProps = state => ({ skills: state.skills });

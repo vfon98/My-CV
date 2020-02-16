@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Header, Icon, Segment, Divider } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import SkillBar from './SkillBar';
@@ -19,6 +20,10 @@ function OtherSkills({ skills }) {
       })}
     </Segment>
   );
+}
+
+OtherSkills.propTypes = {
+  skills: PropTypes.object.isRequired
 }
 
 const mapStateToProps = state => ({
