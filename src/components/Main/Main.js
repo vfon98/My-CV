@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 
 function Main() {
   return (
-    <Grid container style={{paddingTop: '2rem', marginBottom: '20rem'}}>
+    <Grid container style={{paddingTop: '2rem', marginBottom: '2rem'}}>
       <Grid.Row>
         <Grid.Column width={4}>
           <InfoCard />

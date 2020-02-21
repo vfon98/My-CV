@@ -16,7 +16,7 @@ function AcademicProjects({ academic_projects }) {
         <Header.Content>
           Academic projects
           <Header.Subheader>
-            Projects that make based on the requirement of subject
+            Based on knowledge learing at university
           </Header.Subheader>
         </Header.Content>
       </Header>

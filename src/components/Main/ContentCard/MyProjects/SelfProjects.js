@@ -15,7 +15,7 @@ function SelfProjects({ self_projects }) {
         <Icon name='laptop' />
         <Header.Content>
           Self projects
-          <Header.Subheader>For learning purpose</Header.Subheader>
+          <Header.Subheader>For praticing self-taught techniques</Header.Subheader>
         </Header.Content>
       </Header>
 

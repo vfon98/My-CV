@@ -18,7 +18,7 @@ const ininitalState = [
   {
     id: 2,
     image: ZaloLogo,
-    link: 'https://www.facebook.com/vfon98',
+    link: 'http://zaloapp.com/qr/p/1gkxmrwz5vvym',
   },
   {
     id: 3,

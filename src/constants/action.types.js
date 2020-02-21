@@ -3,3 +3,4 @@ export const GET_QUOTE = 'GET_QUOTE';
 export const GET_SKILLS = 'GET_SKILLS';
 export const GET_PROJECTS = 'GET_PROJECTS';
 export const GET_CONTACT = 'GET_CONTACT';
+export const GET_RANDOM_QUOTE = 'GET_RANDOM_QUOTE';

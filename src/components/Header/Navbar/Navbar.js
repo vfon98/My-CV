@@ -12,8 +12,11 @@ function Navbar() {
           <Menu.Item name='home' active>
             Home
           </Menu.Item>
-          <Menu.Item name='contact'>Experience</Menu.Item>
-          <Menu.Item name='contact'>Study</Menu.Item>
+          <Menu.Item name='contact'>About</Menu.Item>
+          <Menu.Item name='contact'>Education</Menu.Item>
+          <Menu.Item name='contact'>Skills</Menu.Item>
+          <Menu.Item name='contact'>Projects</Menu.Item>
+          <Menu.Item name='contact'>Language</Menu.Item>
           <Menu.Item name='contact'>Contact</Menu.Item>
         </Menu.Menu>
       </Container>

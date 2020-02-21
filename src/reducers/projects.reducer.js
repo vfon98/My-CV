@@ -40,6 +40,7 @@ const initialState = {
       description:
         'An online management system for education center',
       techniques: ' PHP, MySQL, HTML, CSS, Bootstrap 4, JQuery, etc',
+      team_size: 4,
       repo: 'github.com/vfon98/MemoryCardGame-ReactJs',
       demo: 'vphong.me/MemoryCardGame-ReactJs',
     },
@@ -50,6 +51,7 @@ const initialState = {
       description:
         'Revenues management system for small fastfood store',
       techniques: 'PHP, MySQL, HTML, CSS, Bootstrap 3, etc',
+      team_size: 2,
       repo: 'github.com/vfon98/MemoryCardGame-ReactJs',
       demo: 'vphong.me/MemoryCardGame-ReactJs',
     },
