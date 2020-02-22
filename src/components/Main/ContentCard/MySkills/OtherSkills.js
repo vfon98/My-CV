@@ -6,7 +6,7 @@ import SkillBar from './SkillBar';
 
 function OtherSkills({ skills }) {
   return (
-    <Segment>
+    <Segment data-aos='fade-up'>
       <Header>
         <Icon name='bug' />
         <Header.Content>
@@ -16,7 +16,7 @@ function OtherSkills({ skills }) {
       </Header>
       <Divider />
       {skills.others.map(skill => {
-        return <SkillBar key={skill.id} {...skill} />
+        return <SkillBar aos='fade-left' key={skill.id} {...skill} />
       })}
     </Segment>
   );

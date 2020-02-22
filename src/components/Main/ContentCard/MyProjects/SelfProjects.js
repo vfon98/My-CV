@@ -10,7 +10,7 @@ import slideCustom from './slide.custom.scss';
 
 function SelfProjects({ self_projects }) {
   return (
-    <Segment>
+    <Segment data-aos='fade-left'>
       <Header>
         <Icon name='laptop' />
         <Header.Content>

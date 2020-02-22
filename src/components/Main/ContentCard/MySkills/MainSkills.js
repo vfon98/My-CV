@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Header, Icon, Segment, Divider, Item } from 'semantic-ui-react';
+import { Header, Icon, Segment, Divider } from 'semantic-ui-react';
 import SkillBar from './SkillBar';
 import { connect } from 'react-redux';
 
 function MainSkills({ main_skills }) {
   return (
-    <Segment>
+    <Segment data-aos='fade-down'>
       <Header>
         <Icon name='code' />
         <Header.Content>
@@ -15,11 +15,11 @@ function MainSkills({ main_skills }) {
         </Header.Content>
       </Header>
       <Divider />
-      <Item.Group>
-        {main_skills.map(skill => {
-          return <SkillBar key={skill.id} {...skill} />;
-        })}
-      </Item.Group>
+      
+      {main_skills.map(skill => {
+        return <SkillBar aos='fade-right' key={skill.id} {...skill} />;
+      })}
+    
     </Segment>
   );
 }

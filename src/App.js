@@ -17,7 +17,7 @@ function App() {
     <h1>Loading</h1>
   ) : (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Banner />
       <Main />
     </>

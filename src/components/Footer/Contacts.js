@@ -7,7 +7,7 @@ import OneContact from './OneContact';
 function Contacts({ contacts }) {
   return (
     <Grid.Column textAlign='center'>
-      <Header>Contact me</Header>
+      <Header data-aos='fade-down'>Contact me</Header>
       <Image.Group size="mini">
         {
           contacts.map(contact => (

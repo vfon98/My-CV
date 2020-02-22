@@ -10,7 +10,7 @@ import OneProject from './OneProject';
 
 function AcademicProjects({ academic_projects }) {
   return (
-    <Segment>
+    <Segment data-aos='fade-left'>
       <Header>
         <Icon name='university' />
         <Header.Content>

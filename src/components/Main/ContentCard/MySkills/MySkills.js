@@ -16,14 +16,14 @@ function MySkills() {
     <Segment color='orange'>
       <Ribbon color='orange'>My skills</Ribbon>
 
-      <StyledText>
+      <StyledText data-aos='fade-down'>
         I&apos;ve been mostly focusing on Front-end as my favorite. The others are
         also familiar, but I am not digging into it a lot. These
         self-evaluations based on time-consuming, accumulated knowledge,
-        proficiency, and confidence in each of them.
+        proficiency, and confidence in each of them. Forgive me if they didn&apos;t meet your expectations!
       </StyledText>
 
-      <Grid columns='equal'>
+      <Grid columns='equal' stackable>
         <Grid.Row stretched>
           <Grid.Column>
             <MainSkills />

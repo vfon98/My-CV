@@ -5,10 +5,10 @@ import { Grid, Header, List } from 'semantic-ui-react';
 function SkillList({ header, items }) {
   return (
     <Grid.Column>
-      <Header as='h4'>{header}</Header>
+      <Header data-aos='fade-right' as='h4'>{header}</Header>
       <List bulleted>
         {items.map((item, index) => (
-          <List.Item key={index}>{item}</List.Item>
+          <List.Item data-aos='fade-up' key={index}>{item}</List.Item>
         ))}
       </List>
     </Grid.Column>

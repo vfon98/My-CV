@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import BannerBackground from './../../../assets/images/first-page-banner.jpg';
 import BannerText from './BannerText';
 
-const RedText = styled.div`
+const Wrapper = styled.div`
   background: url(${BannerBackground}) no-repeat center/cover;
-  min-width: 100vh;
+  width: 100vw;
   height: 100vh;
   color: white;
   display: flex;
@@ -16,9 +16,9 @@ const RedText = styled.div`
 
 function Banner() {
   return (
-    <RedText>
+    <Wrapper>
       <BannerText />
-    </RedText>
+    </Wrapper>
   );
 }
 

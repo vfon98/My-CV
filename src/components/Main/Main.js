@@ -6,16 +6,18 @@ import Footer from '../Footer/Footer';
 
 function Main() {
   return (
-    <Grid container style={{paddingTop: '2rem', marginBottom: '2rem'}}>
-      <Grid.Row>
-        <Grid.Column width={4}>
-          <InfoCard />
-        </Grid.Column>
-        <Grid.Column width={12}>
-          <ContentCard />
-          <Footer />
-        </Grid.Column>
-      </Grid.Row>
+    <Grid
+      container
+      style={{ paddingTop: '2rem', marginBottom: '2rem' }}
+      stackable
+    >
+      <Grid.Column width={4}>
+        <InfoCard />
+      </Grid.Column>
+      <Grid.Column width={12}>
+        <ContentCard />
+        <Footer />
+      </Grid.Column>
     </Grid>
   );
 }

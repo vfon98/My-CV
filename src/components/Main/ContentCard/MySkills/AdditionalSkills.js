@@ -9,7 +9,7 @@ function AdditionalSkills({ skills }) {
   
   return (
     <Segment>
-      <Grid columns={3}>
+      <Grid columns={3} stackable>
         <Grid.Row>
           <SkillList {...database} />
           <SkillList {...editors} />

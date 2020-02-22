@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function Ribbon({ color, size = 'large', children }) {
   return (
-    <Label color={color} size={size} ribbon>
+    <Label data-aos='fade-right' color={color} size={size} ribbon>
       {children}
     </Label>
   );

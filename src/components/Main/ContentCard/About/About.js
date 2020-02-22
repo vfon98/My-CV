@@ -9,11 +9,11 @@ function About() {
     <Segment raised color='purple'>
       <Ribbon color='purple'>About me</Ribbon>
 
-      <Segment>
+      <Segment data-aos='fade-right'>
         <Summary />
       </Segment>
 
-      <Segment>
+      <Segment data-aos='fade-left'>
         <Quote />
       </Segment>
     </Segment>

@@ -7,7 +7,7 @@ function Education() {
   return (
     <Segment raised color='blue'>
       <Ribbon color='blue'>Education</Ribbon>
-      <Card fluid>
+      <Card fluid data-aos='fade-left'>
         <Card.Content>
           <Image
             src={ctuLogo}
@@ -23,22 +23,22 @@ function Education() {
 
         <Card.Content>
           <List bulleted relaxed>
-            <List.Item>
+            <List.Item data-aos='fade-left'>
               <b>Degree: </b>Bachelor
             </List.Item>
-            <List.Item>
+            <List.Item data-aos='fade-left'>
               <b>Major: </b>Software Engineering
             </List.Item>
-            <List.Item>
+            <List.Item data-aos='fade-left'>
               <b>GPA: </b>3.16 / 4.00
             </List.Item>
-            <List.Item>
+            <List.Item data-aos='fade-left'>
               <b>Degree grade: </b>Good
             </List.Item>
-            <List.Item>
+            <List.Item data-aos='fade-left'>
               <b>Mode of study: </b>Full-time
             </List.Item>
-            <List.Item>
+            <List.Item data-aos='fade-left'>
               <b>Expected graduation date: </b>September 2020
             </List.Item>
           </List>
