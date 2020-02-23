@@ -15,6 +15,7 @@ function OneContact({ image, link }) {
     <StyledImage>
       <Image
         data-aos='flip-right'
+        data-aos-duration='1000'
         src={image}
         as='a'
         target='_blank'

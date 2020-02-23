@@ -12,7 +12,7 @@ const CopyRight = styled.div`
 // Placed inside Main
 function Footer() {
   return (
-    <Segment stacked color='grey' data-aos='fade-up'>
+    <Segment stacked color='grey' data-aos='fade-left'>
       <Grid columns='equal' stackable>
         <Grid.Row>
           {/* FOOTER CONTENT */}

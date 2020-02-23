@@ -8,7 +8,7 @@ function Main() {
   return (
     <Grid
       container
-      style={{ paddingTop: '2rem', marginBottom: '2rem' }}
+      style={{ paddingTop: '2rem' }}
       stackable
     >
       <Grid.Column width={4}>

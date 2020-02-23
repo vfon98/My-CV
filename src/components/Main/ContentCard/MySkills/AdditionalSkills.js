@@ -6,9 +6,9 @@ import SkillList from './SkillList';
 
 function AdditionalSkills({ skills }) {
   const { database, editors, tools } = skills.additional;
-  
+
   return (
-    <Segment>
+    <Segment data-aos='fade-right'>
       <Grid columns={3} stackable>
         <Grid.Row>
           <SkillList {...database} />
@@ -21,8 +21,8 @@ function AdditionalSkills({ skills }) {
 }
 
 AdditionalSkills.propTypes = {
-  skills: PropTypes.object.isRequired
-}
+  skills: PropTypes.object.isRequired,
+};
 
 const mapStateToProps = state => ({ skills: state.skills });
 

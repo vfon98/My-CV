@@ -7,13 +7,13 @@ import OneContact from './OneContact';
 function Contacts({ contacts }) {
   return (
     <Grid.Column textAlign='center'>
-      <Header data-aos='fade-down'>Contact me</Header>
-      <Image.Group size="mini">
-        {
-          contacts.map(contact => (
-            <OneContact key={contact.id} {...contact} />
-          ))
-        }
+      <Header data-aos='fade-down' data-aos-duration='800'>
+        Contact me
+      </Header>
+      <Image.Group size='mini'>
+        {contacts.map(contact => (
+          <OneContact key={contact.id} {...contact} />
+        ))}
       </Image.Group>
     </Grid.Column>
   );
