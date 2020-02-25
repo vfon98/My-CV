@@ -2,6 +2,7 @@ import * as types from '../constants/action.types';
 import Dijkstra from '../assets/images/dijkstra.jpg';
 import PoorProgrammer from '../assets/images/poor-programmer.png';
 import Linus from '../assets/images/linus-torvalds.jpg';
+import DavidLeinweber from '../assets/images/david-leinweber.jpeg';
 
 const initialState = {
   selectedQuote: {},
@@ -34,9 +35,15 @@ const initialState = {
     },
     {
       id: 4,
-      content: `My code DOESN’T work, I have no idea why. My code WORKS, I have no idea why.`,
+      content: `My code DOESN’T work, I have no idea why. My code WORKS, I have no idea why`,
       author: 'A hopeless programmer',
       coverImage: PoorProgrammer,
+    },
+    {
+      id: 5,
+      content: `Give someone a program, you frustrate them for a day; teach them how to program, you frustrate them for a lifetime`,
+      author: 'David Leinweber',
+      coverImage: DavidLeinweber,
     },
   ],
 };

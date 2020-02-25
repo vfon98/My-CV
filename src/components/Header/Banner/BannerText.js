@@ -11,7 +11,7 @@ const StyledBannerText = styled.div`
   h1 {
     font-size: 8vmin;
     padding-bottom: 0.5rem;
-    border-bottom: 4px double white;
+    border-bottom: 4px solid white;
   }
 `;
 
@@ -20,11 +20,6 @@ const JobTitle = styled.div`
   /* text-transform: uppercase; */
   font-weight: 600;
   font-size: 4vmin;
-  span {
-    /* padding: 0.4rem 0; */
-    /* border-top: 2px solid white; */
-    /* border-bottom: 2px solid white; */
-  }
 `;
 
 function BannerText() {

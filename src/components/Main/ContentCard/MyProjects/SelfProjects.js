@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Segment, Header, Icon } from 'semantic-ui-react';
 import AwesomeSlider from 'react-awesome-slider';
@@ -15,13 +15,16 @@ function SelfProjects({ self_projects }) {
         <Icon name='laptop' />
         <Header.Content>
           Self projects
-          <Header.Subheader>For praticing self-taught techniques</Header.Subheader>
+          <Header.Subheader>
+            For praticing self-taught techniques
+          </Header.Subheader>
         </Header.Content>
       </Header>
 
       <AwesomeSlider
         animation='cubeAnimation'
         cssModule={[CoreStyles, AnimationStyles, slideCustom]}
+        id='project--self'
       >
         {self_projects.map(project => (
           <div key={project.id}>
@@ -34,8 +37,8 @@ function SelfProjects({ self_projects }) {
 }
 
 SelfProjects.propTypes = {
-  self_projects: PropTypes.array.isRequired
-}
+  self_projects: PropTypes.array.isRequired,
+};
 
 const mapStateToProps = state => ({
   self_projects: state.projects.self_projects,

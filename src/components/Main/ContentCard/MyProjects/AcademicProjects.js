@@ -24,6 +24,7 @@ function AcademicProjects({ academic_projects }) {
       <AwesomeSlider
         animation='cubeAnimation'
         cssModule={[CoreStyles, AnimationStyles, SlideCustom]}
+        id='project--academic'
       >
         {academic_projects.map(project => (
           <div key={project.id}>

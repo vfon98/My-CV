@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 // import Navbar from './components/Header/Navbar/Navbar';
 import Banner from './components/Header/Banner/Banner';
 import Main from './components/Main/Main';
+import { Dimmer, Loader } from 'semantic-ui-react';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,10 +14,11 @@ function App() {
     // })
   }, []);
 
-  return isLoading ? (
-    <h1>Loading</h1>
-  ) : (
+  return (
     <>
+      <Dimmer active={isLoading}>
+        <Loader size='hurge'>Loading...</Loader>
+      </Dimmer>
       {/* <Navbar /> */}
       <Banner />
       <Main />
