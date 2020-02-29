@@ -8,8 +8,8 @@ import { getRandomQuote } from '../../../../actions/quotes.action';
 
 const StyledQuote = styled.div`
   .header {
-    @import url('https://fonts.googleapis.com/css?family=Special+Elite');
-    font-family: 'Special Elite', cursive;
+    font-family: cursive, Verdana, sans-serif;
+    font-weight: bold;
     font-size: 1.1rem;
     font-weight: 550;
     line-height: 1.4;
