@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import 'semantic-ui-css/semantic.min.css';
 import './index.css';
+
 import App from './App';
 import { Provider } from 'react-redux';
 import store from './store/configureStore';
+
 import './utils/aos.config';
 
 ReactDOM.render(

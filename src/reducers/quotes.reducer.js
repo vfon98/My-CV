@@ -55,6 +55,11 @@ const quotesReducer = (state = initialState, action) => {
         ...state,
         selectedQuote: state.all[Math.floor(Math.random() * state.all.length)],
       };
+    case types.ALL_QUOTES:
+      // Shuffle when returning
+      return {
+        list: [...state.all].sort(() => 0.5 - Math.random()),
+      };
     default:
       return state;
   }

@@ -1,17 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import './styles.scss';
+import { Icon } from 'semantic-ui-react';
 
 const StyledBannerText = styled.div`
-  border: 4px double white;
+  border: 6px double white;
   text-align: center;
   transform: translateY(-200px);
   padding: 2rem;
+  padding-bottom: 0;
   /* background-color: rgba(93, 81, 121, 0.2); */
   h1 {
     font-size: 8vmin;
     padding-bottom: 0.5rem;
-    border-bottom: 4px solid white;
+    border-bottom: 2px solid white;
   }
 `;
 
@@ -20,6 +22,18 @@ const JobTitle = styled.div`
   /* text-transform: uppercase; */
   font-weight: 600;
   font-size: 4vmin;
+`;
+
+const IconWrapper = styled.div`
+  padding: 1em 0;
+  .icon {
+    /* font-size: 0.9rem; */
+    font-size: 3vmin;
+    transition: transform 0.5s;
+  }
+  .icon:hover {
+    transform: translateY(-4px);
+  }
 `;
 
 function BannerText() {
@@ -31,6 +45,13 @@ function BannerText() {
       <JobTitle data-aos='fade-up' data-aos-duration='1200'>
         <span>Web Developer</span>
       </JobTitle>
+      <IconWrapper>
+        <Icon name='html5' color='orange' />
+        <Icon name='css3 alternate' color='blue' />
+        <Icon name='js' color='yellow' />
+        <Icon name='react' color='teal' />
+        <Icon name='node js' color='green' />
+      </IconWrapper>
     </StyledBannerText>
   );
 }

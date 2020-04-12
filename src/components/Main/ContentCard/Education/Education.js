@@ -5,7 +5,7 @@ import Ribbon from '../../../SharedUI/Ribbon';
 
 function Education() {
   return (
-    <Segment raised color='blue'>
+    <Segment color='blue'>
       <Ribbon color='blue'>Education</Ribbon>
       <Card fluid data-aos='fade-left'>
         <Card.Content>

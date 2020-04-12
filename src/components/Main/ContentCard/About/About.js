@@ -6,7 +6,7 @@ import Quote from './Quote';
 
 function About() {
   return (
-    <Segment raised color='purple'>
+    <Segment color='purple'>
       <Ribbon color='purple'>About me</Ribbon>
 
       <Segment data-aos='fade-right'>
