@@ -5,9 +5,9 @@ import appcoreLogo from '../../../../assets/images/appcore-logo.png';
 
 function Experience() {
   return (
-    <Segment color='teal'>
+    <Segment color='teal' id='experience'>
       <Ribbon color='teal'>Experience</Ribbon>
-      <Card fluid data-aos='fade-left'>
+      <Card fluid data-aos='fade-left' data-aos-duration='1500'>
         <Card.Content>
           <Image
             src={appcoreLogo}

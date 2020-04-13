@@ -6,11 +6,7 @@ import Footer from '../Footer/Footer';
 
 function Main() {
   return (
-    <Grid
-      container
-      style={{ paddingTop: '2rem' }}
-      stackable
-    >
+    <Grid container style={{ paddingTop: '2rem' }} stackable>
       <Grid.Column width={4}>
         <InfoCard />
       </Grid.Column>

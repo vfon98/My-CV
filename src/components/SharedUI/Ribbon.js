@@ -6,6 +6,7 @@ function Ribbon({ color, size = 'large', children }) {
   return (
     <Label
       data-aos='fade-right'
+      data-aos-duration='1000'
       color={color}
       size={size}
       ribbon

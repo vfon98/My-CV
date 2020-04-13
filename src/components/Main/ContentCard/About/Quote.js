@@ -10,14 +10,7 @@ import Slider from 'react-slick';
 function Quote({ allQuotes, quotes = [] }) {
   useEffect(() => {
     allQuotes();
-    // GET FIRST QUOTE
-    // getRandomQuote();
-    // const timer = setInterval(() => {
-    //   getRandomQuote();
-    // }, 3000);
-    // return () => {
-    //   clearInterval(timer);
-    // };
+    // eslint-disable-next-line
   }, []);
 
   const settings = {

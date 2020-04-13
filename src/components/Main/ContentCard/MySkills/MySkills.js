@@ -13,7 +13,7 @@ const StyledText = styled.p`
 
 function MySkills() {
   return (
-    <Segment color='orange'>
+    <Segment color='orange' id='skills'>
       <Ribbon color='orange'>My skills</Ribbon>
 
       <StyledText data-aos='fade-down'>

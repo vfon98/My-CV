@@ -6,10 +6,10 @@ import Quote from './Quote';
 
 function About() {
   return (
-    <Segment color='purple'>
+    <Segment color='purple' id='about-me'>
       <Ribbon color='purple'>About me</Ribbon>
 
-      <Segment data-aos='fade-right'>
+      <Segment data-aos='fade-left' data-aos-duration='1000'>
         <Summary />
       </Segment>
 

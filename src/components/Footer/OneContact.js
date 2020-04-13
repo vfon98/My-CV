@@ -16,6 +16,7 @@ function OneContact({ image, link }) {
       <Image
         data-aos='flip-right'
         data-aos-duration='1000'
+        // data-aos-offset='0'
         src={image}
         as='a'
         target='_blank'

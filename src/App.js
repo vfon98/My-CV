@@ -5,9 +5,10 @@ import Main from './components/Main/Main';
 import LoadingScreen from './components/SharedUI/LoadingScreen';
 import styled from 'styled-components';
 import AOS from 'aos';
+import HOCSidebar from './components/Sidebar/HOCSidebar';
 
 const TopWrapper = styled.div`
-  overflow: ${props => props.shown ? 'hidden' : ''};
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
@@ -24,13 +25,22 @@ function App() {
   }, []);
 
   return (
-    <TopWrapper shown={isLoading}>
-      <LoadingScreen shown={isLoading} />
-      {/* Content will be hidden when LoadingScreen is shown */}
-      {/* <Navbar /> */}
-      <Banner />
-      <Main />
-    </TopWrapper>
+    <>
+      {isLoading ? (
+        <TopWrapper>
+          <LoadingScreen shown={isLoading} />
+          {/* Loading Banner when loading to avoid load time */}
+          <Banner />
+        </TopWrapper>
+      ) : (
+        <>
+          <Banner />
+          <HOCSidebar>
+            <Main />
+          </HOCSidebar>
+        </>
+      )}
+    </>
   );
 }
 

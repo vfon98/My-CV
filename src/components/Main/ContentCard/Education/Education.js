@@ -5,9 +5,9 @@ import Ribbon from '../../../SharedUI/Ribbon';
 
 function Education() {
   return (
-    <Segment color='blue'>
+    <Segment color='blue' id='education'>
       <Ribbon color='blue'>Education</Ribbon>
-      <Card fluid data-aos='fade-left'>
+      <Card fluid data-aos='fade-left' data-aos-duration='1500'>
         <Card.Content>
           <Image
             src={ctuLogo}

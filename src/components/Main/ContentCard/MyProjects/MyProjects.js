@@ -6,7 +6,7 @@ import Ribbon from '../../../SharedUI/Ribbon';
 
 function MyProjects() {
   return (
-    <Segment color='green'>
+    <Segment color='green' id='projects'>
       <Ribbon color='green'>My projects</Ribbon>
 
       <SelfProjects />

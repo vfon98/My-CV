@@ -8,7 +8,7 @@ function AdditionalSkills({ skills }) {
   const { database, editors, tools } = skills.additional;
 
   return (
-    <Segment data-aos='fade-right'>
+    <Segment data-aos='fade-right' data-aos-duration='1500'>
       <Grid columns={3} stackable>
         <Grid.Row>
           <SkillList {...database} />
