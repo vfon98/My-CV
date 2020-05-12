@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9298608bfd11adc95364995d18aae8e",
+    "revision": "92ca1380dcf29b2e90d269b84c67b700",
     "url": "./index.html"
   },
   {
-    "revision": "cac4b70c5b8533a9f80d",
-    "url": "./static/css/2.1936c8d3.chunk.css"
+    "revision": "772f1f0e7bbad26cc4bd",
+    "url": "./static/css/2.8ddcc5eb.chunk.css"
   },
   {
-    "revision": "e446796a492b7c84a6e4",
-    "url": "./static/css/main.187b62a8.chunk.css"
+    "revision": "fd51166d60d80750cced",
+    "url": "./static/css/main.d89f2fe6.chunk.css"
   },
   {
-    "revision": "cac4b70c5b8533a9f80d",
-    "url": "./static/js/2.bf52909f.chunk.js"
+    "revision": "772f1f0e7bbad26cc4bd",
+    "url": "./static/js/2.933d97c7.chunk.js"
   },
   {
     "revision": "967c3aa677d48917bda81b3b2ff2693c",
-    "url": "./static/js/2.bf52909f.chunk.js.LICENSE.txt"
+    "url": "./static/js/2.933d97c7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e446796a492b7c84a6e4",
-    "url": "./static/js/main.bf898156.chunk.js"
+    "revision": "fd51166d60d80750cced",
+    "url": "./static/js/main.1fa5fa18.chunk.js"
   },
   {
     "revision": "222de0dad65bddccf43a",
     "url": "./static/js/runtime-main.73e3f7f6.js"
+  },
+  {
+    "revision": "006a43331e000b9339db5ef7e14e5a0b",
+    "url": "./static/media/[CV] Tô Vủ Phong - Web developer.006a4333.pdf"
+  },
+  {
+    "revision": "8a640807f9fdbdd229884506ad105d2c",
+    "url": "./static/media/appcore-logo.8a640807.png"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
@@ -46,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
     "url": "./static/media/brand-icons.e8c322de.woff2"
+  },
+  {
+    "revision": "475c63bf348c9388c6f470f63c6959c3",
+    "url": "./static/media/covid-screenshot.475c63bf.png"
   },
   {
     "revision": "5fa49a74eb7da6c5cd39a3314089155a",
@@ -104,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/messenger.ce6ad67f.svg"
   },
   {
-    "revision": "02fa3d0a2af819e003520df1e8c3fcd3",
-    "url": "./static/media/my-avatar.02fa3d0a.svg"
+    "revision": "e4340f7384b68b788ed10d75e8b43796",
+    "url": "./static/media/my-avatar.e4340f73.svg"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -134,6 +146,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b9d8f5a4b5c26f3f2e11832a3cfbe733",
     "url": "./static/media/skype.b9d8f5a4.svg"
+  },
+  {
+    "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
+    "url": "./static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "./static/media/slick.ced611da.eot"
+  },
+  {
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "./static/media/slick.d41f55a7.ttf"
+  },
+  {
+    "revision": "f97e3bbf73254b0112091d0192f17aec",
+    "url": "./static/media/slick.f97e3bbf.svg"
+  },
+  {
+    "revision": "1ec9385a4005cef1696959599c85f715",
+    "url": "./static/media/todos-app.1ec9385a.png"
   },
   {
     "revision": "9087cf4afc5136134aeb3e3d7440194c",
