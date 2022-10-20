@@ -35,6 +35,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Start action
         run: echo [START] Starting process
+
+      - name: Yarn install packages
+        run: yarn
         
       - name: Build static HTML Page
         run: yarn build
