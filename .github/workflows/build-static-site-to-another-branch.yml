@@ -1,0 +1,52 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy built React static site to public repo https://vfon98.github.io
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+
+      # Runs a single command using the runners shell
+      - name: Start action
+        run: echo [START] Starting process
+        
+      - name: Build static HTML Page
+        run: yarn build
+
+      - name: Push to https://github.com/vfon98/vfon98.github.io
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'public'
+          destination-github-username: 'vfon98'
+          destination-repository-name: 'vfon98.github.io'
+          user-name: Phong To
+          user-email: hi@vphong.com
+          target-branch: master
