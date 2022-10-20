@@ -52,4 +52,4 @@ jobs:
           destination-repository-name: 'vfon98.github.io'
           user-name: Phong To
           user-email: hi@vphong.com
-          target-branch: master
+          target-branch: main
