@@ -21,7 +21,7 @@ function App() {
     setTimeout(() => {
       setIsLoading(false);
       AOS.refreshHard();
-    }, 3500);
+    }, 1500);
   }, []);
 
   return (

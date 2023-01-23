@@ -12,7 +12,6 @@ function Languages() {
             <Segment data-aos='fade-left' data-aos-duration='1500'>
               <Header>Vietnamese</Header>
               <List bulleted relaxed>
-                <List.Item data-aos='fade-up'>Of course</List.Item>
                 <List.Item data-aos='fade-up'>Mother tongue</List.Item>
               </List>
             </Segment>

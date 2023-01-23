@@ -1,8 +1,8 @@
-import * as types from '../constants/action.types';
-import Dijkstra from '../assets/images/dijkstra.jpg';
-import PoorProgrammer from '../assets/images/poor-programmer.png';
-import Linus from '../assets/images/linus-torvalds.jpg';
 import DavidLeinweber from '../assets/images/david-leinweber.jpeg';
+import Dijkstra from '../assets/images/dijkstra.jpg';
+import Linus from '../assets/images/linus-torvalds.jpg';
+import PoorProgrammer from '../assets/images/poor-programmer.png';
+import * as types from '../constants/action.types';
 
 const initialState = {
   selectedQuote: {},

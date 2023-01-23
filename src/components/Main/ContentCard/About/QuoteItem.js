@@ -1,14 +1,15 @@
-import React from 'react';
+import { Grid, Icon, Item } from 'semantic-ui-react';
+
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
-import { Item, Icon, Grid } from 'semantic-ui-react';
 
 const StyledQuote = styled.div`
   .header {
-    font-family: cursive, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 1.1rem;
-    font-weight: 550;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
     line-height: 1.4;
     text-align: right;
     margin-left: 0.9em;
@@ -27,9 +28,10 @@ const StyledQuote = styled.div`
     padding-right: 0.2rem;
     cite {
       font-weight: 400;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
+
   @media (max-width: 375px) {
     .header {
       font-size: 0.7rem;
@@ -38,15 +40,23 @@ const StyledQuote = styled.div`
         white-space: pre-line;
       }
     }
+
     .meta {
       margin-top: 0;
       cite {
         font-size: 0.6rem;
       }
     }
+
     .icon {
       top: -2px;
     }
+  }
+`;
+
+const StyledImage = styled(Item.Image)`
+  img {
+    max-height: 6.5rem;
   }
 `;
 
@@ -82,7 +92,7 @@ function QuoteItem({ quote }) {
           mobile={4}
           style={{ paddingLeft: 0 }}
         >
-          <Item.Image
+          <StyledImage
             data-aos='fade-left'
             data-aos-duration='1000'
             src={quote.coverImage}

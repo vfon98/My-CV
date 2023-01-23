@@ -1,11 +1,12 @@
-/* eslint-disable react/display-name */
 import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import { allQuotes, getRandomQuote } from '../../../../actions/quotes.action';
+
+/* eslint-disable react/display-name */
 import PropTypes from 'prop-types';
-import { getRandomQuote, allQuotes } from '../../../../actions/quotes.action';
 import QuoteItem from './QuoteItem';
 import Slider from 'react-slick';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 function Quote({ allQuotes, quotes = [] }) {
   useEffect(() => {
@@ -21,7 +22,7 @@ function Quote({ allQuotes, quotes = [] }) {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 1000,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     appendDots: dots => (
       <div style={{ transform: 'translateY(0.5em)' }}>{dots}</div>
     ),
