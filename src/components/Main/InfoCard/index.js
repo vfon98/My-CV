@@ -8,7 +8,7 @@ function InfoCard() {
   return (
     <Segment raised color='red' style={{ position: 'sticky', top: '1rem' }}>
       <Ribbon color='red' size='huge'>
-        Tô Vủ Phong
+        Phong To
       </Ribbon>
       <Segment>
         <Image src={MyAvatar} size='small' centered />

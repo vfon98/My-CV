@@ -18,8 +18,8 @@ const initialState = [
     id: 2,
     icon: 'at',
     header: 'Email',
-    content: 'vfon98@gmail.com',
-    link: 'mailto://vfon98@gmail.com/',
+    content: 'contact@vphong.com',
+    link: 'mailto://contact@vphong.com/',
   },
   {
     id: 3,

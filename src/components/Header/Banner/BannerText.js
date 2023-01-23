@@ -40,7 +40,7 @@ function BannerText() {
   return (
     <StyledBannerText data-aos='fade-up' data-aos-duration='800' id='banner'>
       <h1 data-aos='zoom-in-up' data-aos-duration='1500'>
-        Hi, I&apos;m <span>Tô Vủ Phong</span>
+        Hi, I&apos;m <span>Phong To</span>
       </h1>
       <JobTitle data-aos='fade-up' data-aos-duration='1200'>
         <span>Web Developer</span>
