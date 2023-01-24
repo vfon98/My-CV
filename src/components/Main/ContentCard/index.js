@@ -1,12 +1,12 @@
 import React from 'react';
-import About from './About/About'
-import Education from './Education/Education';
-import MySkills from './MySkills/MySkills';
-import MyProjects from './MyProjects/MyProjects'
-import Languages from './Languages/Languages';
+import styled from 'styled-components';
 
-import styled from 'styled-components'
-// import Experience from './Experience/Experience';
+import About from './About/About';
+import Education from './Education/Education';
+import Experience from './Experience/Experience';
+import Languages from './Languages/Languages';
+import MyProjects from './MyProjects/MyProjects';
+import MySkills from './MySkills/MySkills';
 
 const HoverableSegment = styled.div`
   & > .segment:hover {
@@ -19,7 +19,7 @@ function ContentCard() {
     <HoverableSegment>
       <About />
       <Education />
-      {/* <Experience /> */}
+      <Experience />
       <MySkills />
       <MyProjects />
       <Languages />
