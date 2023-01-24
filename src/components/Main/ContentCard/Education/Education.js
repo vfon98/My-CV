@@ -17,8 +17,8 @@ function Education() {
             style={{ margin: 0 }}
           />
 
-          <Card.Header style={{paddingTop: '0.6rem'}}>CAN THO UNIVERSITY</Card.Header>
-          <Card.Meta>2016 - Present</Card.Meta>
+          <Card.Header style={{paddingTop: '0.6rem'}}>CAN THO UNIVERSITY, VIETNAM</Card.Header>
+          <Card.Meta>Sep 2016 - Apr 2020</Card.Meta>
         </Card.Content>
 
         <Card.Content>
@@ -30,16 +30,13 @@ function Education() {
               <b>Major: </b>Software Engineering
             </List.Item>
             <List.Item data-aos='fade-left'>
-              <b>GPA: </b>3.16 / 4.00
+              <b>GPA: </b>3.28 / 4.00
             </List.Item>
             <List.Item data-aos='fade-left'>
-              <b>Degree grade: </b>Good
+              <b>Degree grade: </b>Very Good
             </List.Item>
             <List.Item data-aos='fade-left'>
               <b>Mode of study: </b>Full-time
-            </List.Item>
-            <List.Item data-aos='fade-left'>
-              <b>Expected graduation date: </b>September 2020
             </List.Item>
           </List>
         </Card.Content>
