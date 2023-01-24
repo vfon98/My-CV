@@ -23,6 +23,7 @@ specifiers:
   semantic-ui-react: ^0.88.2
   slick-carousel: ^1.8.1
   styled-components: ^5.3.6
+  typewriter-effect: ^2.19.0
 
 dependencies:
   '@testing-library/jest-dom': 4.2.4
@@ -43,6 +44,7 @@ dependencies:
   semantic-ui-react: 0.88.2_wcqkhtmu7mswc6yz4uyexck3ty
   slick-carousel: 1.8.1
   styled-components: 5.3.6_wcqkhtmu7mswc6yz4uyexck3ty
+  typewriter-effect: 2.19.0_wcqkhtmu7mswc6yz4uyexck3ty
 
 devDependencies:
   eslint: 8.32.0
@@ -9970,6 +9972,18 @@ packages:
     resolution: {integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==}
     dependencies:
       is-typedarray: 1.0.0
+    dev: false
+
+  /typewriter-effect/2.19.0_wcqkhtmu7mswc6yz4uyexck3ty:
+    resolution: {integrity: sha512-rhUX1ukmAXNFWUnMFx8CDU1uLWJQ7pRYzDU7WfHJRq43i6SmWSP9vFiUsOGfXINodUAgZiJ5xnzwLciHxZDGDg==}
+    peerDependencies:
+      react: ^17.x || ^18.x
+      react-dom: ^17.x || ^18.x
+    dependencies:
+      prop-types: 15.8.1
+      raf: 3.4.1
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
     dev: false
 
   /unbox-primitive/1.0.2:

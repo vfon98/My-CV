@@ -35,6 +35,20 @@ const initialState = [
     content: 'vfon98',
     link: 'https://join.skype.com/invite/h3Jrvs3WaJfc',
   },
+  {
+    id: 5,
+    icon: 'linkedin',
+    header: 'LinkedIn',
+    content: 'linkedin.com/in/vfon98',
+    link: 'https://www.linkedin.com/in/vfon98',
+  },
+  {
+    id: 6,
+    icon: 'globe',
+    header: 'Website',
+    content: 'vphong.com',
+    link: 'https://vphong.com',
+  },
 ];
 
 const infoReducer = (state = initialState, action) => {

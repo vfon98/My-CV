@@ -12,7 +12,7 @@ function InfoCard() {
       </Ribbon>
       <Segment>
         <Image src={MyAvatar} size='small' centered />
-        <Divider horizontal>Web developer</Divider>
+        <Divider horizontal>Software Engineer</Divider>
         <InfoList />
       </Segment>
       <Button color='violet' circular fluid inverted>
