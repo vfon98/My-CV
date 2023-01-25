@@ -9,7 +9,7 @@ const initialState = {
   all: [
     {
       id: 0,
-      content: `If debugging is the process of removing software bugs, then programming must be the process of putting them in`,
+      content: `If debugging is the process of removing software bugs,<br />then programming must be the process of putting them in`,
       author: 'Edsger Dijkstra',
       coverImage: Dijkstra,
     },
@@ -28,20 +28,19 @@ const initialState = {
     },
     {
       id: 3,
-      content: `Talk is cheap.
-      Show me the code.`,
+      content: `Talk is cheap. Show me the code`,
       author: 'Linus Torvalds',
       coverImage: Linus,
     },
     {
       id: 4,
-      content: `My code DOESN’T work, I have no idea why. My code WORKS, I have no idea why`,
+      content: `My code DOESN’T work, I have no idea why.<br />My code WORKS, I have no idea why`,
       author: 'A hopeless programmer',
       coverImage: PoorProgrammer,
     },
     {
       id: 5,
-      content: `Give someone a program, you frustrate them for a day; teach them how to program, you frustrate them for a lifetime`,
+      content: `Give someone a program, you frustrate them for a day.<br />Teach them how to program, you frustrate them for a lifetime`,
       author: 'David Leinweber',
       coverImage: DavidLeinweber,
     },

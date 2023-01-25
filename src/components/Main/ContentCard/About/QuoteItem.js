@@ -1,8 +1,8 @@
-import { Grid, Icon, Item } from 'semantic-ui-react';
+import { Grid, Icon, Item } from 'semantic-ui-react'
 
-import PropTypes from 'prop-types';
-import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types'
+import React from 'react'
+import styled from 'styled-components'
 
 const StyledQuote = styled.div`
   .header {
@@ -52,13 +52,13 @@ const StyledQuote = styled.div`
       top: -2px;
     }
   }
-`;
+`
 
 const StyledImage = styled(Item.Image)`
   img {
     max-height: 6.5rem;
   }
-`;
+`
 
 function QuoteItem({ quote }) {
   return (
@@ -68,19 +68,21 @@ function QuoteItem({ quote }) {
           computer={14}
           tablet={12}
           mobile={12}
-          textAlign='right'
+          textAlign="right"
           style={{ paddingLeft: 0 }}
         >
           <StyledQuote>
-            <Item.Content verticalAlign='middle'>
+            <Item.Content verticalAlign="middle">
               <Item.Header>
                 <p>
-                  <Icon name='quote left' />
-                  {quote.content}
-                  <Icon name='quote right' />
+                  <Icon name="quote left" />
+                  <span
+                    dangerouslySetInnerHTML={{ __html: quote.content }}
+                  ></span>
+                  <Icon name="quote right" />
                 </p>
               </Item.Header>
-              <Item.Meta data-aos='fade-up'>
+              <Item.Meta data-aos="fade-up">
                 <cite>{`- ${quote.author} -`}</cite>
               </Item.Meta>
             </Item.Content>
@@ -93,29 +95,29 @@ function QuoteItem({ quote }) {
           style={{ paddingLeft: 0 }}
         >
           <StyledImage
-            data-aos='fade-left'
-            data-aos-duration='1000'
+            data-aos="fade-left"
+            data-aos-duration="1000"
             src={quote.coverImage}
-            size='tiny'
+            size="tiny"
           />
         </Grid.Column>
       </Grid>
     </Item>
-  );
+  )
 }
 
 QuoteItem.propTypes = {
   quote: PropTypes.shape({
     content: PropTypes.string.isRequired,
     author: PropTypes.string,
-    coverImage: PropTypes.string.isRequired
+    coverImage: PropTypes.string.isRequired,
   }),
-};
+}
 
 QuoteItem.defaultProps = {
   quote: {
     author: 'Unknown',
   },
-};
+}
 
-export default QuoteItem;
+export default QuoteItem
